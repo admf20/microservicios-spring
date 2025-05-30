@@ -26,6 +26,9 @@
         <module>microservice-gataway</module>
         <module>microservice-eureka</module>
         <module>microservice-config</module>
+
+        <module>microservice-student</module>
+        <module>microservice-course</module>
     </modules>
 
     <properties>
