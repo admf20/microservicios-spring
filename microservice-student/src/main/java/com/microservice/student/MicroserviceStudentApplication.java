@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@EnableDiscoveryClient //para indicarle a Spring que este servicio va, ser cliente de eureka
+@EnableDiscoveryClient
 @SpringBootApplication
 public class MicroserviceStudentApplication {
 
