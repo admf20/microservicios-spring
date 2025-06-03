@@ -40,9 +40,14 @@ public class CourseServiceImpl implements ICourseService {
 
         //consultar curso
         Course course = ICourseRepository.findById(idCourse).orElse(new Course());
+        System.out.println("Curso: ".concat(course.getTeacher()));
 
-        //obtener los estudiantes
+        /* - Acá nos comunicamos con los con el otro microservicio de estudiante
+           - El metodo nos retorna una lista de estudiantes, como no tenemos un objeto
+             para trabajar con esa lista, creamos un StudentDTO
+        * */
         List<StudentDTO> studentDTOSList = studentClient.findAllStudentByCourse(idCourse);
+        System.out.println("Lista de estudiantes: ".concat(studentDTOSList.toString()));
 
         StudentByCourseResponse studentByCourseResponse = new StudentByCourseResponse();
         studentByCourseResponse.setCourseName(course.getName());

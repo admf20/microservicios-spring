@@ -15,6 +15,6 @@ Configuración para hacer la relación con microservicio para comunicarse
 @FeignClient(name = "msvc-student", url = "localhost:8090/api/student")
 public interface StudentClient {
 
-    @GetMapping("/search-student/{idCourse}")
-    List<StudentDTO> findAllStudentByCourse(@PathVariable Long idCourse);
+    @GetMapping("/search-by-course/{courseId}")
+    List<StudentDTO> findAllStudentByCourse(@PathVariable Long courseId);
 }
