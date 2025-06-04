@@ -13,8 +13,8 @@ Cada servicio está desarrollado y desplegado de forma independiente, permitiend
 | `microservice-eureka`     | Registro de servicios (Eureka Server)                            | `8761`      |
 | `microservice-config`     | Servidor de configuración centralizada                           | `8888`      |
 | `microservice-gateway`    | API Gateway para enrutar peticiones a los microservicios         | `8080`      |
-| `microservice-student`    | Microservicio que gestiona estudiantes                           | `8081`      |
-| `microservice-course`     | Microservicio que gestiona cursos                                | `8082`      |
+| `microservice-student`    | Microservicio que gestiona estudiantes                           | `8090`      |
+| `microservice-course`     | Microservicio que gestiona cursos                                | `9090`      |
 
 ---
 ```mermaid
