@@ -17,6 +17,22 @@ Cada servicio está desarrollado y desplegado de forma independiente, permitiend
 | `microservice-course`     | Microservicio que gestiona cursos                                | `8082`      |
 
 ---
+```mermaid
+    flowchart TD
+    Config[Config Server]
+    
+    subgraph Servicios
+        Gateway[API Gateway]
+        Eureka[Eureka Server]
+        Course[Curso Service]
+        Student[Estudiante Service]
+    end
+
+    Config --> Gateway
+    Config --> Eureka
+    Config --> Course
+    Config --> Student
+```
 
 ## 🧰 Tecnologías Utilizadas
 
